@@ -32,17 +32,11 @@ You will be prompted for your tenant name, and be asked if you wish to generate 
 
 For more on the Skedulo CLI see this [getting started video](https://www.youtube.com/watch?v=gxvs-KezZvc) or the [documentation.](https://developer.skedulo.com/developer-guides/cli/skedulo-cli-introduction/)
 
-### Deployment/Modification (upsert)
+### Deployment/Modification
 
 You can use the following command to deploy these examples to your tenant, replacing `<state-file>` with the filename for the example you wish to deploy.
 
 `sked artifacts function upsert -f <state-file>`
-
-### Deletion (delete)
-
-You can use the following command to delete these examples from your tenant, replacing `<state-file>` with the filename for the example you wish to delete.
-
-`sked artifacts function delete -f <state-file>`
 
 ### Testing
 
@@ -50,9 +44,15 @@ You can test your Optimization Extensions by running them locally using the foll
 
 `sked function dev . -p 3000`
 
-This will run the function locally on port 3000, and you can then make a `POST` request to the test endpoint at `http://localhost:3000/test-optimization-transformer` to verify the functionality of your Optimization Extension.
+This will run the function locally on port 3000, allowing you to make a `POST` request to the test endpoint at `http://localhost:3000/test-optimization-transformer` to verify the functionality of your Optimization Extension.
 
 Included in this repository is an [example payload.](https://github.com/Skedulo/OptimizationExtensionExamples/blob/main/ExampleTestPayload.json) Ensure you change the `resourceIds`, `jobIds` and `regionId` to valid record UIDs from your Skedulo tenant.
+
+### Deletion
+
+You can use the following command to delete these examples from your tenant, replacing `<state-file>` with the filename for the example you wish to delete.
+
+`sked artifacts function delete -f <state-file>`
 
 ## Getting Help
 
