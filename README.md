@@ -8,15 +8,15 @@ Optimization extensions enable you to create custom scheduling logic to meet the
 
 You can read more about [Optimization Extensions](https://docs.skedulo.com/developer-guides/manage-and-schedule-work/optimization-of-schedules/extensions-transformers/) or [Connected Functions](https://developer.skedulo.com/developer-guides/integration-and-automation/skedulo-functions/introduction-to-functions/) on the Skedulo Docs site.
 
-# Examples
+## Examples
 
 This repository contains the following examples:
 
-## Basic Example
+### Basic Example
 
 This example extension allocates every job to a single resource by creating a single `resourceDependency` record.
 
-## Same Resource Per Account
+### Same Resource Per Account
 
 This example extension allocates every job with the same account, to the same resource by merging data from the `featureModel` and `productData`, then creating a list of `resourceDependency` records grouped by account.
 
@@ -44,6 +44,6 @@ You can use the following command to delete these examples from your tenant, rep
 
 `sked artifacts function delete -f <state-file>`
 
-### Getting Help
+## Getting Help
 
 Please see the [Optimisation Extension documation](https://docs.skedulo.com/developer-guides/manage-and-schedule-work/optimization-of-schedules/extensions-transformers/), or get in touch with your Customer Success Manager.
