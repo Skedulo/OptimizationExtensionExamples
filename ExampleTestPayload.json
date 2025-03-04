@@ -1,0 +1,38 @@
+{
+		"resourceIds": [
+			"<insert resource IDs here>"
+		],
+		"jobIds": [
+			"<insert job IDs here>"
+		],
+		"regionId": "<insert region ID here>",
+		"scheduleWindow": {
+			"start": "2024-11-04T08:00:00.000Z",
+			"end": "2024-11-09T08:00:00.000Z"
+		},
+		"timezone": "Europe/Brussels",
+		"options": {
+			"respectSchedule": false,
+			"full": false,
+			"ignoreTravelTime": false,
+			"ignoreTravelTimeFirstJob": true,
+			"ignoreTravelTimeLastJob": true,
+			"minimizeResources": false,
+			"maxTravelTimeBetweenLocations": null,
+			"respectAllocationTimes": false,
+			"respectAllocationTimesOverTimeConstraints": false,
+			"balanceAbsoluteWorkload": false,
+			"randomizeResources": false,
+			"objectiveWeights": {
+				"preferredResources": 0,
+				"minimizeDisruption": 0,
+				"balanceAbsoluteWorkload": 100,
+				"travelTime": 0,
+				"minimizeResources": 0,
+				"softSkills": 0,
+				"jobsPriority": 0
+			},
+			"enablePartiallyAllocatedGroups": true,
+			"waitingSynchronizationMode": "groupsOnly"
+		}
+	}

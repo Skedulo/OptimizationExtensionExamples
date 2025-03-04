@@ -1,0 +1,8 @@
+{
+  "type": "function",
+  "version": "1",
+  "name": "BasicExample",
+  "description": "An example repo of an optimization extension",
+  "runtime": "nodejs18.x",
+  "settings": {}
+}

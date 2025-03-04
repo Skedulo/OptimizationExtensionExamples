@@ -1,0 +1,7 @@
+{
+  "metadata": {
+    "type": "Function"
+  },
+  "name": "SameResourcePerAccount",
+  "source": "./SameResourcePerAccount"
+}
