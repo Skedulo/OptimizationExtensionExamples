@@ -1,6 +1,6 @@
 # Skedulo Optimization Extension Examples
 
-A set of example Skedulo Optimisation Extensions.
+A set of example Skedulo Optimization Extensions.
 
 ## About
 
@@ -56,4 +56,4 @@ You can use the following command to delete these examples from your tenant, rep
 
 ## Getting Help
 
-Please see the [Optimisation Extension documentation](https://docs.skedulo.com/developer-guides/manage-and-schedule-work/optimization-of-schedules/extensions-transformers/), or get in touch with your Customer Success Manager.
+Please see the [Optimization Extension documentation](https://docs.skedulo.com/developer-guides/manage-and-schedule-work/optimization-of-schedules/extensions-transformers/), or get in touch with your Customer Success Manager.
