@@ -1,6 +1,6 @@
 # Skedulo Optimization Extension Examples
 
-An set of example Skedulo Optimisation Extensions.
+A set of example Skedulo Optimisation Extensions.
 
 ## About
 
@@ -24,7 +24,7 @@ This example extension allocates every job with the same account, to the same re
 
 These examples are intended to be deployed with the Skedulo CLI.
 
-In order to deploy them, you will need to log in to a tentant, this can be done with the following command
+In order to deploy them, you will need to log into a tenant, this can be done with the following command
 
 `sked tenant login web` or `sked tenant login token` if you wish to use an access token.
 
@@ -44,6 +44,16 @@ You can use the following command to delete these examples from your tenant, rep
 
 `sked artifacts function delete -f <state-file>`
 
+### Testing
+
+You can test your Optimization Extensions by running them locally using the following command (run at the root directory of the extension)
+
+`sked function dev . -p 3000`
+
+This will run the function locally on port 3000, and you can then make a `POST` request to the test endpoint at `http://localhost:3000/test-optimization-transformer` to verify the functionality of your Optimization Extension.
+
+Included in this repository is an [example payload.](https://github.com/Skedulo/OptimizationExtensionExamples/blob/main/ExampleTestPayload.json) Ensure you change the `resourceIds`, `jobIds` and `regionId` to valid record UIDs from your Skedulo tenant.
+
 ## Getting Help
 
-Please see the [Optimisation Extension documation](https://docs.skedulo.com/developer-guides/manage-and-schedule-work/optimization-of-schedules/extensions-transformers/), or get in touch with your Customer Success Manager.
+Please see the [Optimisation Extension documentation](https://docs.skedulo.com/developer-guides/manage-and-schedule-work/optimization-of-schedules/extensions-transformers/), or get in touch with your Customer Success Manager.
